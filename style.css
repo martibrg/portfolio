@@ -123,12 +123,9 @@ footer.site-footer {
   opacity: 0;
   /* durata del fade tra un'immagine e l'altra: 0 = cambio istantaneo.
      per un fade "vero" basta alzare questo valore, es. 0.6s */
-  transition: opacity 0s;
+  transition: opacity 0.6s;
 }
 
-.home-preview .preview-img.active {
-  opacity: 1;
-}
 
 /* elenco dei lavori a destra */
 .work-list {
