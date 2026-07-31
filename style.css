@@ -126,9 +126,6 @@ footer.site-footer {
   transition: opacity 0.5s;
 }
 
-.home-preview .preview-img.active {
-  opacity: 1;
-}
 
 /* elenco dei lavori a destra */
 .work-list {
