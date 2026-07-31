@@ -15,15 +15,10 @@
   <main>
     <h1 class="work-title-heading">meta shitposting | posting megashit</h1>
 
-    <!-- VIDEO: sostituisci l'src con il link "embed" di Vimeo/YouTube,
-         oppure con un tag <video> se carichi il file direttamente -->
+    <!-- SLIDESHOW DI CLIP: quando una clip finisce parte subito la successiva.
+         Per cambiare le clip, modifica l'elenco CLIPS qui sotto. -->
     <div class="work-media">
-      <iframe
-        src="https://player.vimeo.com/video/XXXXXXXXX"
-        title="meta shitposting | posting megashit"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen>
-      </iframe>
+      <video id="clip-player" controls playsinline></video>
     </div>
 
     <div class="work-body">
@@ -52,6 +47,16 @@
     <a href="mailto:martinaborgese01@gmail.com">martinaborgese01@gmail.com</a>
     <a href="https://instagram.com/marti.brg" target="_blank" rel="noopener">IG ↗</a>
   </footer>
+  <script>
+    var CLIPS = [
+      "../assets/works/meta-shitposting/clip1.mp4",
+      "../assets/works/meta-shitposting/clip2.mp4",
+      "../assets/works/meta-shitposting/clip3.mp4",
+      "../assets/works/meta-shitposting/clip4.mp4",
+      "../assets/works/meta-shitposting/clip5.mp4"
+    ];
+  </script>
+  <script src="../assets/clip-slideshow.js?v=1"></script>
 
 </body>
 </html>
