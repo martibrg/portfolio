@@ -11,14 +11,26 @@
   // Aggiungi/rimuovi/rinomina qui i percorsi delle tue immagini.
   // Puoi mettere quante immagini vuoi.
   var IMAGES = [
-    "assets/preview/1.svg",
-    "assets/preview/2.svg",
-    "assets/preview/3.svg"
+    "assets/preview/1.jpg",
+    "assets/preview/10.png",
+    "assets/preview/11.png",
+    "assets/preview/12.png",
+    "assets/preview/13.png",
+    "assets/preview/14.jpg",
+    "assets/preview/15.jpg",
+    "assets/preview/2.png",
+    "assets/preview/3.png",
+    "assets/preview/4.png",
+    "assets/preview/5.png",
+    "assets/preview/6.png",  
+    "assets/preview/7.png",
+    "assets/preview/8.png",
+    "assets/preview/9.png",       
   ];
 
   // -------- 2. TEMPO DI VISUALIZZAZIONE --------
   // Millisecondi che ogni immagine resta visibile prima di cambiare.
-  var INTERVAL_MS = 4500;
+  var INTERVAL_MS = 5000;
 
   // -------- shuffle (Fisher-Yates) --------
   function shuffle(array) {
