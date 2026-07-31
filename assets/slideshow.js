@@ -30,7 +30,7 @@
 
   // -------- 2. TEMPO DI VISUALIZZAZIONE --------
   // Millisecondi che ogni immagine resta visibile prima di cambiare.
-  var INTERVAL_MS = 2500;
+  var INTERVAL_MS = 6500;
 
   // -------- shuffle (Fisher-Yates) --------
   function shuffle(array) {
