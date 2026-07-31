@@ -21,6 +21,12 @@ html, body {
   color: var(--text);
   background: #fff;
   min-height: 100%;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img, video, iframe {
+  max-width: 100%;
 }
 
 body {
@@ -73,9 +79,13 @@ footer.site-footer {
 
 .home-title {
   text-align: center;
-  font-size: 64px;
-  font-weight: 400;
   margin: 40px 0 24px 0;
+}
+
+.home-title video {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
 }
 
 .home-about {
@@ -138,8 +148,8 @@ footer.site-footer {
   .home-grid {
     grid-template-columns: 1fr;
   }
-  .home-title {
-    font-size: 40px;
+  .home-title video {
+    max-width: 90%;
   }
   .work-row {
     grid-template-columns: 1fr;
