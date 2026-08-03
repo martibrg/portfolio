@@ -191,8 +191,8 @@ footer.site-footer {
 .work-media img {
   width: 100%;
   display: block;
-  aspect-ratio: 16 / 9;
-  border: 0;
+  aspect-ratio: auto;
+  border: 20px;
 }
 
 /* miniature cliccabili sotto il player, per scegliere la clip */
