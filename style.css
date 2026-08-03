@@ -185,9 +185,15 @@ footer.site-footer {
   background: white;
 }
 
-.work-media video,
-.work-media iframe{
+.work-media video {
   width: 100%;
+  display: block;
+  aspect-ratio: auto;
+  border: 0;
+}
+
+.work-media iframe {
+  width: 200%;
   display: block;
   aspect-ratio: auto;
   border: 0;
