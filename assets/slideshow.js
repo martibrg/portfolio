@@ -22,10 +22,10 @@
     "assets/preview/3.png",
     "assets/preview/4.png",
     "assets/preview/5.png",
-    "assets/preview/6.png",  
+    "assets/preview/6.png",
     "assets/preview/7.png",
     "assets/preview/8.png",
-    "assets/preview/9.png",       
+    "assets/preview/9.png"
   ];
 
   // -------- 2. TEMPO DI VISUALIZZAZIONE --------
@@ -55,28 +55,40 @@
     var pos = 0;
     var showingA = true;
 
-    // mostra la prima immagine
+    // mostra la prima immagine (qui non serve precaricare:
+    // è la primissima cosa che l'utente vede, non c'è dissolvenza da rompere)
     layerA.src = order[pos];
     layerA.classList.add("active");
 
     if (order.length <= 1) return; // niente da alternare
 
-    setInterval(function () {
+    function showNext() {
       pos++;
       if (pos >= order.length) {
         order = shuffle(IMAGES); // rimescola quando il giro finisce
         pos = 0;
       }
 
+      var nextSrc = order[pos];
       var incoming = showingA ? layerB : layerA;
       var outgoing = showingA ? layerA : layerB;
 
-      incoming.src = order[pos];
-      incoming.classList.add("active");
-      outgoing.classList.remove("active");
+      // PRECARICA l'immagine successiva in memoria: solo quando è
+      // davvero pronta la assegniamo al layer visibile e facciamo
+      // partire la dissolvenza. Così il layer "incoming" non mostra
+      // mai per un istante l'immagine vecchia che aveva rimasta da
+      // due cicli prima (quel lampo indesiderato durante il fade).
+      var preloader = new Image();
+      preloader.onload = function () {
+        incoming.src = nextSrc;
+        incoming.classList.add("active");
+        outgoing.classList.remove("active");
+        showingA = !showingA;
+      };
+      preloader.src = nextSrc;
+    }
 
-      showingA = !showingA;
-    }, INTERVAL_MS);
+    setInterval(showNext, INTERVAL_MS);
   });
 
 })();
