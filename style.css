@@ -180,7 +180,7 @@ footer.site-footer {
 }
 
 .work-media {
-  max-width: 1080px;
+  max-width: 1920px;
   margin: 0 auto;
   background: white;
 }
@@ -194,7 +194,7 @@ footer.site-footer {
 }
 
 .work-media iframe {
-  width: 200%;
+  width: 100%;
   display: block;
   aspect-ratio: auto;
   border: 0;
