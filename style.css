@@ -186,13 +186,18 @@ footer.site-footer {
 }
 
 .work-media video,
-.work-media iframe,
+.work-media iframe{
+  width: 100%;
+  display: block;
+  aspect-ratio: auto;
+  border: 0;
+}
+
 .work-media img {
   width: 100%;
   display: block;
   aspect-ratio: auto;
   border: 0;
-  padding: 10px 0px 40px;
 }
 
 /* miniature cliccabili sotto il player, per scegliere la clip */
