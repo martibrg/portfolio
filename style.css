@@ -180,7 +180,7 @@ footer.site-footer {
 }
 
 .work-media {
-  max-width: 680px;
+  max-width: 1080px;
   margin: 0 auto;
   background: #000;
 }
@@ -191,7 +191,7 @@ footer.site-footer {
   width: 100%;
   display: block;
   aspect-ratio: auto;
-  border: 0;
+  border: ;
 }
 
 /* miniature cliccabili sotto il player, per scegliere la clip */
