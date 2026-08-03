@@ -190,6 +190,7 @@ footer.site-footer {
   display: block;
   aspect-ratio: auto;
   border: 0;
+  padding: 10px 0px 30px;
 }
 
 .work-media iframe {
@@ -197,6 +198,7 @@ footer.site-footer {
   display: block;
   aspect-ratio: auto;
   border: 0;
+  padding: 10px 0px 30px;
 }
 
 .work-media img {
@@ -204,6 +206,7 @@ footer.site-footer {
   display: block;
   aspect-ratio: auto;
   border: 0;
+  padding: 10px 0px 30px;
 }
 
 /* miniature cliccabili sotto il player, per scegliere la clip */
