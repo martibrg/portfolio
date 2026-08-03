@@ -244,11 +244,31 @@ footer.site-footer {
   height: auto;
 }
 
+/* galleria di più video affiancati orizzontalmente, autoplay senza controlli */
 .work-gallery {
-  width: 800px;
   display: grid;
-  gap: 25px;
-  grid-auto-rows: 250px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1360px;
+  margin: 0 auto 40px auto;
+}
+
+.work-gallery video {
+  width: 100%;
+  display: block;
+  background: #000;
+  /* i video vengono ritagliati in verticale 3:4 per restare tutti
+     della stessa altezza e allineati. Se preferisci che ogni video
+     mantenga le sue proporzioni naturali (senza ritaglio), cancella
+     le due righe "aspect-ratio" e "object-fit" qui sotto. */
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+@media (max-width: 760px) {
+  .work-gallery {
+    grid-template-columns: 1fr;
+  }
 }
 
 .work-body {
