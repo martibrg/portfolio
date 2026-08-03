@@ -193,6 +193,14 @@ footer.site-footer {
   padding: 10px 0px 30px;
 }
 
+.work-cell video {
+  width: 100%;
+  display: block;
+  aspect-ratio: auto;
+  border: 0;
+  padding: 10px 0px 30px;
+}
+
 .work-media iframe {
   width: 100%;
   display: block;
