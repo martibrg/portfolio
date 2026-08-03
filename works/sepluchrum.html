@@ -15,16 +15,14 @@
   <main>
     <h1 class="work-title-heading">sepulchrum (in loving memory)</h1>
 
-    <!-- SLIDESHOW DI CLIP: quando una clip finisce parte subito la successiva.
-         Per cambiare le clip, modifica l'elenco CLIPS in fondo alla pagina. -->
-<div id="work-gallery">
-  <div>  <video src="../assets/sepulchrum/helloworld_candela sfiammerina.mp4" style="position:relative;">
-           </video> </div>
-  <div>  <video src="../assets/sepulchrum/helloworld_candela spenta.mp4" style="position:relative;">
-           </video> </div>
-    <div>  <video src="../assets/sepulchrum/full sepulchrum.mp4 style="position:relative;">
-           </video> </div>
-</div>
+    <!-- GALLERIA DI 3 VIDEO: autoplay, senza controlli visibili, in loop,
+         allineati in orizzontale. I percorsi sono esattamente quelli
+         dei tuoi file, non li ho modificati. -->
+    <div class="work-gallery" id="work-gallery">
+      <video src="../assets/sepulchrum/helloworld_candela sfiammerina.mp4" autoplay muted loop playsinline></video>
+      <video src="../assets/sepulchrum/helloworld_candela spenta.mp4" autoplay muted loop playsinline></video>
+      <video src="../assets/sepulchrum/full sepulchrum.mp4" autoplay muted loop playsinline></video>
+    </div>
 
 
 
