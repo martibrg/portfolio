@@ -193,14 +193,6 @@ footer.site-footer {
   padding: 10px 0px 30px;
 }
 
-.work-cell video {
-  width: 100%;
-  display: block;
-  aspect-ratio: auto;
-  border: 0;
-  padding: 10px 0px 30px;
-}
-
 .work-media iframe {
   width: 100%;
   display: block;
@@ -250,6 +242,13 @@ footer.site-footer {
   display: block;
   width: 96px;
   height: auto;
+}
+
+.work-gallery {
+  width: 800px;
+  display: grid;
+  gap: 25px;
+  grid-auto-rows: 250px;
 }
 
 .work-body {
