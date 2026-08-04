@@ -1,4 +1,4 @@
-/* ===================================================
+ /* ===================================================
    martina borgese — portfolio
    Foglio di stile condiviso da tutte le pagine
    =================================================== */
@@ -240,9 +240,8 @@ footer.site-footer {
 
 .clip-thumb img {
   display: block;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  width: 96px;
+  height: 96px;
 }
 
 /* galleria di più video affiancati orizzontalmente, autoplay senza controlli */
