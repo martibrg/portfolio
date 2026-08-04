@@ -240,8 +240,9 @@ footer.site-footer {
 
 .clip-thumb img {
   display: block;
-  width: 96px;
-  height: auto;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 /* galleria di più video affiancati orizzontalmente, autoplay senza controlli */
