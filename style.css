@@ -47,7 +47,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ---------- header (link "Home" in alto a sinistra) ---------- */
+/*header*/
 
 header.site-header {
   margin-bottom: 10px;
@@ -57,13 +57,13 @@ header.site-header a {
   font-size: 14px;
 }
 
-/* ---------- contenuto: cresce per spingere il footer in basso ---------- */
+/*contenuto: cresce per spingere il footer in basso */
 
 main {
   flex: 1 0 auto;
 }
 
-/* ---------- footer ---------- */
+/* footer */
 
 footer.site-footer {
   display: flex;
@@ -73,9 +73,7 @@ footer.site-footer {
   font-size: 13px;
 }
 
-/* ===================================================
-   HOMEPAGE
-   =================================================== */
+/* HOMEPAGE */
 
 .home-title {
   text-align: center;
@@ -168,9 +166,7 @@ footer.site-footer {
   }
 }
 
-/* ===================================================
-   PAGINA SINGOLO LAVORO
-   =================================================== */
+/* PAGINA SINGOLO LAVORO */
 
 .work-title-heading {
   text-align: center;
@@ -319,9 +315,7 @@ footer.site-footer {
   }
 }
 
-/* ===================================================
-   PAGINA ABOUT
-   =================================================== */
+/* PAGINA ABOUT */
 
 .about-grid {
   display: grid;
